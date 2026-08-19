@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cfe-chat"
+version = "5.0.0"
+description = "A decentralized, serverless P2P LAN messenger with zero configuration."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "timmoa-cfe", email = "lizoaa.5334.2949@gmail.com"}
+]
+keywords = ["chat", "p2p", "lan", "decentralized", "messenger", "peer-to-peer"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Chat",
+    "Topic :: Internet",
+]
+
+dependencies = [
+    "customtkinter>=5.0",
+    "cryptography>=41.0.0",
+    "pillow>=10.0.0",
+]
+
+[project.optional-dependencies]
+tray = ["pystray>=0.19.0"]
+dev = ["build", "twine"]
+
+[project.urls]
+Homepage = "https://github.com/timmoa-cfe/CFE-Chat"
+Repository = "https://github.com/timmoa-cfe/CFE-Chat.git"
+Issues = "https://github.com/timmoa-cfe/CFE-Chat/issues"
+Telegram = "https://t.me/CFE_Chat"
+Documentation = "https://github.com/timmoa-cfe/CFE-Chat/blob/main/RELEASE_v5.0.md"
+
+[project.scripts]
+cfe-chat = "cfe_chat.cfe_chat_v5:main"
+
+[tool.setuptools]
+packages = ["cfe_chat"]
+
+[tool.setuptools.package-data]
+cfe_chat = ["py.typed"]
