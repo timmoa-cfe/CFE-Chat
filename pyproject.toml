@@ -49,10 +49,11 @@ Telegram = "https://t.me/CFE_Chat"
 Documentation = "https://github.com/timmoa-cfe/CFE-Chat/blob/main/RELEASE_v5.0.md"
 
 [project.scripts]
-cfe-chat = "cfe_chat.cfe_chat_v5:main"
+cfe-chat = "cfe_chat_v5.cfe_chat_v5:main"
 
 [tool.setuptools]
-packages = ["cfe_chat"]
+packages = ["cfe_chat_v5"]
 
 [tool.setuptools.package-data]
-cfe_chat = ["py.typed"]
+cfe_chat_v5 = ["py.typed"]
+
